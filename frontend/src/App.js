@@ -17,26 +17,33 @@ function App() {
     }
     data()
   },[])
-
-
   const [loading, setLoading] = useState(false);
 
+  //important Line
   const downloadPdf = () => {
     setLoading(true);
+    var opt = {
+      margin:       .2,
+      html2canvas:  { scale: 2 },
+    };
 
     const html = ReactDOMServer.renderToString(<TemplateONE />);
-
-    html2pdf().from(html).save("resume.pdf");
+    html2pdf().set(opt).from(html).save("resume.pdf");
 
     setLoading(false);
   };
 
   return (
     
-    data &&<>
+    data &&
             <>
+            <div className="App">
+      <button className="bg-blue-500 p-5 rounded text-white" onClick={downloadPdf} disabled={loading}>
+        {loading ? <span>Downloading...</span> : <span>Download</span>}
+      </button>
+    </div>
     <div className=" bg-neutral-100  flex justify-center items-center">
-        <div className="bg-white actual-pdf mt-2  max-w-[612px] min-w-[612px]   p-4">
+        <div className="bg-white  mt-2  max-w-[612px] min-w-[612px]   p-4">
           
 <div className="flex gap-2 justify-between">
 <div
@@ -191,12 +198,6 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
         </div>
       </div>
   </>
-    <div className="App">
-      <button onClick={downloadPdf} disabled={loading}>
-        {loading ? <span>Downloading...</span> : <span>Download</span>}
-      </button>
-    </div>
-    </>
   )
     
 }
