@@ -27,6 +27,96 @@ professionalExperience: [
     durationOfWork: "June 2022 - December 2022",
     additionalDetails: "Additional details about this experience.",
   },
+  {
+    companyName: "ABC Company",
+    jobTitle: "UX Design Intern",
+    location:'Delhi, India',
+    jobDescription:
+      "Conducted user research and analyzed data to identify design opportunities and inform design decisions followed by bjddi hrb rjrjr udud udbbd drrvrd. Collaborated with cross-functional teams to create wireframes, prototypes, and high-fidelity mockups. Maintained High Standard work.",
+    durationOfWork: "June 2022 - December 2022",
+    additionalDetails: "Additional details about this experience.",
+  },
+  {
+    companyName: "ABC Company",
+    jobTitle: "UX Design Intern",
+    location:'Delhi, India',
+    jobDescription:
+      "Conducted user research and analyzed data to identify design opportunities and inform design decisions followed by bjddi hrb rjrjr udud udbbd drrvrd. Collaborated with cross-functional teams to create wireframes, prototypes, and high-fidelity mockups. Maintained High Standard work.",
+    durationOfWork: "June 2022 - December 2022",
+    additionalDetails: "Additional details about this experience.",
+  },
+  {
+    companyName: "ABC Company",
+    jobTitle: "UX Design Intern",
+    location:'Delhi, India',
+    jobDescription:
+      "Conducted user research and analyzed data to identify design opportunities and inform design decisions followed by bjddi hrb rjrjr udud udbbd drrvrd. Collaborated with cross-functional teams to create wireframes, prototypes, and high-fidelity mockups. Maintained High Standard work.",
+    durationOfWork: "June 2022 - December 2022",
+    additionalDetails: "Additional details about this experience.",
+  },
+  {
+    companyName: "ABC Company",
+    jobTitle: "UX Design Intern",
+    location:'Delhi, India',
+    jobDescription:
+      "Conducted user research and analyzed data to identify design opportunities and inform design decisions followed by bjddi hrb rjrjr udud udbbd drrvrd. Collaborated with cross-functional teams to create wireframes, prototypes, and high-fidelity mockups. Maintained High Standard work.",
+    durationOfWork: "June 2022 - December 2022",
+    additionalDetails: "Additional details about this experience.",
+  },
+  {
+    companyName: "ABC Company",
+    jobTitle: "UX Design Intern",
+    location:'Delhi, India',
+    jobDescription:
+      "Conducted user research and analyzed data to identify design opportunities and inform design decisions followed by bjddi hrb rjrjr udud udbbd drrvrd. Collaborated with cross-functional teams to create wireframes, prototypes, and high-fidelity mockups. Maintained High Standard work.",
+    durationOfWork: "June 2022 - December 2022",
+    additionalDetails: "Additional details about this experience.",
+  },
+  {
+    companyName: "ABC Company",
+    jobTitle: "UX Design Intern",
+    location:'Delhi, India',
+    jobDescription:
+      "Conducted user research and analyzed data to identify design opportunities and inform design decisions followed by bjddi hrb rjrjr udud udbbd drrvrd. Collaborated with cross-functional teams to create wireframes, prototypes, and high-fidelity mockups. Maintained High Standard work.",
+    durationOfWork: "June 2022 - December 2022",
+    additionalDetails: "Additional details about this experience.",
+  },
+  {
+    companyName: "ABC Company",
+    jobTitle: "UX Design Intern",
+    location:'Delhi, India',
+    jobDescription:
+      "Conducted user research and analyzed data to identify design opportunities and inform design decisions followed by bjddi hrb rjrjr udud udbbd drrvrd. Collaborated with cross-functional teams to create wireframes, prototypes, and high-fidelity mockups. Maintained High Standard work.",
+    durationOfWork: "June 2022 - December 2022",
+    additionalDetails: "Additional details about this experience.",
+  },
+  {
+    companyName: "ABC Company",
+    jobTitle: "UX Design Intern",
+    location:'Delhi, India',
+    jobDescription:
+      "Conducted user research and analyzed data to identify design opportunities and inform design decisions followed by bjddi hrb rjrjr udud udbbd drrvrd. Collaborated with cross-functional teams to create wireframes, prototypes, and high-fidelity mockups. Maintained High Standard work.",
+    durationOfWork: "June 2022 - December 2022",
+    additionalDetails: "Additional details about this experience.",
+  },
+  {
+    companyName: "ABC Company",
+    jobTitle: "UX Design Intern",
+    location:'Delhi, India',
+    jobDescription:
+      "Conducted user research and analyzed data to identify design opportunities and inform design decisions followed by bjddi hrb rjrjr udud udbbd drrvrd. Collaborated with cross-functional teams to create wireframes, prototypes, and high-fidelity mockups. Maintained High Standard work.",
+    durationOfWork: "June 2022 - December 2022",
+    additionalDetails: "Additional details about this experience.",
+  },
+  {
+    companyName: "ABC Company",
+    jobTitle: "UX Design Intern",
+    location:'Delhi, India',
+    jobDescription:
+      "Conducted user research and analyzed data to identify design opportunities and inform design decisions followed by bjddi hrb rjrjr udud udbbd drrvrd. Collaborated with cross-functional teams to create wireframes, prototypes, and high-fidelity mockups. Maintained High Standard work.",
+    durationOfWork: "June 2022 - December 2022",
+    additionalDetails: "Additional details about this experience.",
+  },
 ],
 
 projects: [

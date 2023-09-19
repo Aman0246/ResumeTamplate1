@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { data } from "./dummydata";
+import React from "react";
 
-export default function TemplateONE() {
+
+export default function TemplateONE({data}) {
+  console.log(data)
   return (
     <>
     <div className="">
@@ -21,9 +22,9 @@ className="w-[65%] text-[12px] font-semibold  text-right  px-1"
 <div
 className="text-left text-[12px] font-semibold "
 >{data?.expertise}</div>
-<div className=" w-[23%] flex text-[12px] font-semibold ">
+<div className=" flex text-[12px] font-semibold ">
 <span className="">+91-</span>
-<span className="">{data.phone}</span>
+<span className="">{data?.phone}</span>
 </div>
 </div>
 
@@ -57,7 +58,7 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
 {data?.professionalExperience.map((e)=>(<>
 <div className="flex justify-between mt-2">
 <div type="text" className="text-[12px] font-semibold ">{e?.companyName}</div>
-<div type="text" className="text-right text-[12px] font-semibold  ">{e.location}</div>
+<div type="text" className="text-right text-[12px] font-semibold  ">{e?.location}</div>
 </div>
 <div className="flex justify-between ">
 <div  className="text-[12px] font-semibold  ">{e?.jobTitle} </div>
@@ -138,7 +139,7 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
 <div className="flex gap-3 text-[12px]">
 {data?.tools.map((e)=>(
 <div>
-{e.tools}
+{e},
 </div>
 ))}
 </div>

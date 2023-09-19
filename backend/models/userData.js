@@ -6,6 +6,7 @@ const professionalExperienceSchema = new mongoose.Schema({
   jobTitle: { type: String },
   jobDescription: { type: String },
   durationOfWork: { type: String },
+  location:{type: String },
   additionalDetails: { type: String },
 });
 
@@ -21,6 +22,7 @@ const projectsSchema = new mongoose.Schema({
 // Define the Education sub-schema
 const educationSchema = new mongoose.Schema({
   schoolName: { type: String },
+  location:{type: String },
   programName: { type: String },
   dateRange: { type: String },
   specialization: { type: String },
