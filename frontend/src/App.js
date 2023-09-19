@@ -1,10 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOMServer from "react-dom/server";
 import html2pdf from "html2pdf.js";
 import TemplateONE from "./Pages/TamplateONE";
-import { data } from "./Pages/dummydata";
+// import { data } from "./Pages/dummydata";
+import axios from 'axios'
 
+axios.defaults.baseURL = 'http://localhost:7000';
 function App() {
+  const [data,setdata]=useState(null)
+  useEffect(()=>{
+    let data=async()=>{
+      console.log('Fetching data...');
+       let a= await axios.get('/')
+       setdata(a.data.data)
+       console.log('Data fetched:', data);
+    }
+    data()
+  },[])
+
+
   const [loading, setLoading] = useState(false);
 
   const downloadPdf = () => {
@@ -18,8 +32,9 @@ function App() {
   };
 
   return (
-    <>
-        <>
+    
+    data &&<>
+            <>
     <div className=" bg-neutral-100  flex justify-center items-center">
         <div className="bg-white actual-pdf mt-2  max-w-[612px] min-w-[612px]   p-4">
           
@@ -39,7 +54,7 @@ className="text-left text-[12px] font-semibold "
 >{data?.expertise}</div>
 <div className=" w-[23%] flex text-[12px] font-semibold ">
 <span className="">+91-</span>
-<span className="">{data.phone}</span>
+<span className="">{data?.phone}</span>
 </div>
 </div>
 
@@ -182,7 +197,8 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
       </button>
     </div>
     </>
-  );
+  )
+    
 }
 
 export default App;
