@@ -5,7 +5,7 @@ const tamplateOne =express.Router()
 
 tamplateOne.get('/',async(req,res)=>{
     console.log('hellow')
-  let data =await UserData.findOne({email:'johndoe@example.com'})
+  let data =await UserData.findOne({email:'john.doe@example.com'})
   res.send({data:data})
 })
   
