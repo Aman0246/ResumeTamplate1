@@ -1,36 +1,13 @@
 import React, { useState } from "react";
 import { data } from "./dummydata";
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 
 export default function TemplateONE() {
-  const [loading, setLoading] = useState(false);
-
-  const downloadPdf = () => {
-    setLoading(true);
-
-    const capture = document.querySelector('.actual-pdf');
-    html2canvas(capture,{ scrollX: 0, scrollY: 0 }).then((canvas) => {
-      // Convert canvas to URL format
-      const imgData = canvas.toDataURL('image/png');
-      // Create a PDF using jsPDF
-      const doc = new jsPDF('p', 'mm', 'letter');
-      const componentWidth = doc.internal.pageSize.getWidth();
-      const componentHeight = doc.internal.pageSize.getHeight();
-      doc.addImage(imgData, 'PNG', 0, 0, componentWidth, componentHeight);
-      console.log(doc)
-      doc.save('resume.pdf');
-      setLoading(false);
-    });
-  };
-
   return (
     <>
     <div className="">
-      <div className="bg-neutral-200  flex justify-center items-center ">
-        <div className="bg-white actual-pdf mt-2 max-w-[612px] min-w-[612px]  p-4">
+        <div className="bg-white actual-pdf mt-2   p-4">
           
-<div className="flex justify-between">
+<div className="flex gap-2 justify-between">
 <div
 className="text-[18px]  w-[80%] text-left font-semibold"
 >{data?.name}</div>
@@ -65,7 +42,7 @@ className=" text-[12px] font-semibold "
 
 <div className=" mt-2">
 <div className=" text-lg">Impact I Create</div>
-<div className="my-2 border border-sky-200"></div>
+<div className="border my-2 border-sky-200"></div>
 <div
 className="w-[100%]  resize-none text-[10px]  px-1 mt-2"                     
 >{data?.impactICreate}</div>
@@ -76,7 +53,7 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
 
 <div className="mt-2">
 <div className=" text-lg">Professional Experience</div>
-<div className="my-2 border border-sky-200"></div>
+<div className="border my-2 border-sky-200"></div>
 {data?.professionalExperience.map((e)=>(<>
 <div className="flex justify-between mt-2">
 <div type="text" className="text-[12px] font-semibold ">{e?.companyName}</div>
@@ -100,7 +77,7 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
 
 <div className="mt-2">
 <div className=" text-lg">Projects</div>
-<div className="my-2 border border-sky-200"></div>
+<div className="border my-2 border-sky-200"></div>
 {data?.projects.map((e)=>(
 <>
 <div className="flex justify-between mt-2">
@@ -122,7 +99,7 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
 
 <div className=" mt-2 ">
 <div className=" text-lg">Education</div>
-<div className="my-2 border border-sky-200"></div>
+<div className="border my-2 border-sky-200"></div>
 {data?.education.map((e)=>(
 <>
     <div className="flex justify-between mt-2">
@@ -144,7 +121,7 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
 
 <div className=" mt-2">
 <div className=" text-lg">Skills</div>
-<div className="my-2 border border-sky-200"></div>
+<div className="border my-2 border-sky-200"></div>
 <div className="flex gap-3 text-[12px]">
 {data?.skills.map((e)=>(
 <div>
@@ -157,7 +134,7 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
 
 <div className=" mt-2">
 <div className=" text-lg">Tools</div>
-<div className="my-2 border border-sky-200"></div>
+<div className="border my-2 border-sky-200"></div>
 <div className="flex gap-3 text-[12px]">
 {data?.tools.map((e)=>(
 <div>
@@ -171,7 +148,7 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
 
 <div className="mt-2 ">
 <div className=" text-lg">Achievements</div>
-<div className="my-2 border border-sky-200"></div>
+<div className="border my-2 border-sky-200"></div>
 {data?.achievements.map((e)=>(
 <div className="my-2">
 <div  className=" text-sky-600 text-[10px] font-bold resize-none w-full" >{e?.achievementName}</div>                   
@@ -182,10 +159,6 @@ className="w-[100%]  resize-none text-[10px]  px-1 mt-2"
 </div> 
         </div>
       </div>
-    </div>
-    <button onClick={downloadPdf} disabled={loading}>
-      {loading ? <span>Downloading...</span> : <span>Download</span>}
-    </button>
   </>
   );
 }
