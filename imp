@@ -1,0 +1,5 @@
+
+  const downloadPdf = () => {
+    const html = ReactDOMServer.renderToString(<TemplateONE />);
+    html2pdf().from(html).save("resume.pdf");
+  };
