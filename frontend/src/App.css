@@ -1,3 +1,7 @@
+.pdf-page {
+  page-break-before: always;
+}
+
 /* .App {
   text-align: center;
 }
